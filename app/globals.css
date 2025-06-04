@@ -1,11 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @custom-variant dark (&:is(.dark *));
-
 
 :root {
   --radius: 0.625rem;
@@ -142,20 +140,21 @@
 
 @layer base {
   * {
-    @apply border-border ; 
+    @apply border-border;
+    font-family: "Geist", sans-serif;
   }
-  .react-calendar{
+  .react-calendar {
     width: 100% !important;
     border: none !important;
     font-family: sans-serif;
   }
-.react-calendar__navigation__label{
-  font-weight: 600;
-}
-.react-calendar__tile--active{
-  background: #dbd9d9 !important;
-  color: #000 !important;
-}
+  .react-calendar__navigation__label {
+    font-weight: 600;
+  }
+  .react-calendar__tile--active {
+    background: #dbd9d9 !important;
+    color: #000 !important;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -169,5 +168,3 @@ body {
 /* input:focus, textarea:focus, select:focus {
   @apply ring-2 ring-indigo-500 border-indigo-500;
 } */
-
- 
